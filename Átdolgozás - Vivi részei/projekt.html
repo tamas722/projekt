@@ -22,6 +22,7 @@
                         <li><a href="#elerhetosegek">Elérhetőségeink</a></li>
                     </ul>
                     <a href="#" class="btn">iratkozz fel!</a>
+                    <img src="sun.png" class="icon" id="icon">
                </nav>
                 <div class="content">
                   <h4>Hello,üdvözlünk az oldalon!</h4>
@@ -39,6 +40,8 @@
          </div>
   </div>
 </div>
+
+
 <!----Szigetvári Vivien Munkája-->
 
 <section class="rolunk">
@@ -52,6 +55,9 @@
       </div>
     </div>
   
+
+
+
     <div class="fooldal">
       <img src="anonimlany.png" alt="ide feltöltjük a képeinket">
       <div class="rolunk-szoveg">
@@ -62,6 +68,9 @@
         </div>
       </div>
       <div>
+
+
+
   
       </div>
       <div class="fooldal">
@@ -75,18 +84,20 @@
         </div>
   </section>
   
+
+
+
   <div class="szolgaltatasaink" id="szolgaltatasaink">
     <div class="szolgaltatascim">
       <h2>Milyen munkaterületen tudunk segíteni?</h2>
     </div>
     <div class="doboz">
         <!-- Ezt az ikont a font awesome oldalról szereztem, ahol automatikusan kiírja a html kódot az oldal! :) -->
-
       <div class="kartya">
         <i class="fas fa-bars"></i>
         <h5>Web Fejlesztés</h5>
         <div class="szolgaltataspra">
-          <p> ----------------------------------------------------------------------------------------------------------------------------------------------</p>
+          <p> Mindhárman kezdő, weblapszerkesztői képességekkel rendelkezünk. Preferált nyelvezet a CSS/JS, HTML, XHTML formátumok.</p>
   
           <p style="text-align: center;">
             <a class="button" href="#">Olvass tovább</a>
@@ -150,6 +161,8 @@
       
       
        <script>
+
+
           let gombketto=document.getElementById("gombketto");
           let spans=document.getElementTagName("span");
           
@@ -167,7 +180,19 @@
       
       
       
+            /*  vilagos modhoz Pfingstl Josef munkája*/
       
+      var icon=document.getElementById("icon");
+      icon.onclick=function(){
+document.body.classList.toggle("vilagosmod");
+if(document.body.classList.contains("vilagosmod")){
+  icon.src="moon.png";
+
+      }
+      else {
+        icon.src="sun.png";
+      }
+    }
       
       
       
